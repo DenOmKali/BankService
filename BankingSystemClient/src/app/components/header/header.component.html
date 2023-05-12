@@ -1,0 +1,101 @@
+<header class="header-container">
+    <div class="logo-container">
+        <h2><a routerLink="/">Optimus Bank</a></h2>
+    </div>
+    <div class="menu-container">
+        <ul class="menu-block">
+            <li id="first-label" class="menu-label"><a routerLink="/news">News</a></li>
+            <li class="menu-label"><a routerLink="/cards">Cards</a></li>
+            <li class="menu-label"><a routerLink="/transfers">Transfers</a></li>
+            <li id="last-label" class="menu-label"><a href="#">Vacancies</a></li>
+        </ul>
+    </div>
+    <div *ngIf="!getTokenFromCookies()" class="authorization-container">
+        <p><a (click)="openLoginPopup()">Log in</a></p>|
+        <p><a (click)="openRegistrationPopup()">Registration</a></p>
+    </div>
+    <div *ngIf="getTokenFromCookies()" class="profile-container">
+        <div class="profile-data-box">
+            <p> {{ profile.name }} </p>|
+            <a routerLink="/profile">Profile</a>
+        </div>
+        <p (click)="signOut()" class="sign-out-label">Sign Out</p>
+    </div>
+</header>
+
+<div class="popup-container" *ngIf="showLogin">
+    <div class="login-container">
+        <div class="close-box">
+            <div class="close" (click)="closeLoginPopup()">
+                <p>X</p>
+            </div>
+        </div>
+        <div class="authorize-box">
+            <div class="label-box">
+                <h2>Optimus Bank</h2>
+            </div>
+            <div class="form-container">
+                <form (ngSubmit)="loginForm()" class="form-box">
+                    <div class="input-box">
+                        <p>Login</p>
+                        <input type="text" name="email" [(ngModel)]="loginData.email">
+                    </div>
+                    <div class="input-box">
+                        <p>Password</p>
+                        <input type="password" name="password" [(ngModel)]="loginData.password">
+                    </div>
+                    <div class="post-data">
+                        <button type="submit" class="btn">Authorize</button>
+                    </div>
+                </form>
+            </div>
+            <div class="next-popup-box">
+                <p class="next-popup-btn" (click)="openRegistrationPopup()">Registration</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup-container" *ngIf="showRegistration">
+    <div class="registration-container">
+        <div class="close-box">
+            <div class="close" (click)="closeRegistrationPopup()">
+                <p>X</p>
+            </div>
+        </div>
+        <div class="authorize-box">
+            <div class="label-box">
+                <h2>Optimus Bank</h2>
+            </div>
+            <div class="form-container">
+                <form (ngSubmit)="registrationForm()" class="form-box">
+                    <div class="input-box">
+                        <p>Name</p>
+                        <input type="text" name="name" [(ngModel)]="registrationData.name">
+                    </div>
+                    <div class="input-box">
+                        <p>Surname</p>
+                        <input type="text" name="surname" [(ngModel)]="registrationData.surname">
+                    </div>
+                  <div class="input-box">
+                    <p>Phone Number</p>
+                    <input type="text" name="phone-number" [(ngModel)]="registrationData.phoneNumber">
+                  </div>
+                    <div class="input-box">
+                        <p>Email</p>
+                        <input type="text" name="email" [(ngModel)]="registrationData.email">
+                    </div>
+                    <div class="input-box">
+                        <p>Password</p>
+                        <input type="password" name="password" [(ngModel)]="registrationData.password">
+                    </div>
+                    <div class="post-data">
+                        <button type="submit" class="btn">Registration</button>
+                    </div>
+                </form>
+            </div>
+            <div class="next-popup-box">
+                <p class="next-popup-btn" (click)="openLoginPopup()">Login</p>
+            </div>
+        </div>
+    </div>
+</div>

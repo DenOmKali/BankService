@@ -1,0 +1,26 @@
+<div class="content-box">
+  <div class="card-container">
+    <div class="card">
+      <div class="logo-box">
+        <h4 class="logo-label">Optimus Bank</h4>
+        <h5>Debit-card</h5>
+      </div>
+      <div class="card-number-box">
+        <p>0000 0000 0000 0000</p>
+      </div>
+      <div class="date-cvv2-box">
+        <p>00/00</p>
+        <p>000</p>
+      </div>
+    </div>
+  </div>
+  <div class="pin-code-box">
+    <form (ngSubmit)="saveDebitCard()">
+      <h3>Create pin-code to your debit Card</h3>
+      <input type="text" name="pinCode" [ngModel]="pinCode">
+      <div class="button-box">
+        <button type="submit"> Create </button>
+      </div>
+    </form>
+  </div>
+</div>

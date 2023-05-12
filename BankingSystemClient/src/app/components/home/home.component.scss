@@ -1,0 +1,446 @@
+.slider-wrapper {
+  height: 300px;
+}
+
+.slider-container {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+  opacity: 0.8;
+  transition: 0.5s ease-out;
+
+  &:hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+.slider-box{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  animation: slide 20s infinite;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}
+// 
+
+.functional-wrapper {
+  height: 100%;
+}
+
+.functional-container, .information-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exchange-container, .charity-container, .converter-container, .bank-functions-container, .vacancies-container {
+  margin: 40px 40px 40px 40px;
+  padding: 20px 20px 20px 20px;
+  width: 500px;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,0.67);
+  -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,0.67);
+  box-shadow: 0px 0px 31px -2px rgba(0,0,0,0.67);
+  transition: 0.5s ease-out;
+
+  &:hover {
+    margin-top: 30px;
+    -webkit-box-shadow: -2px 29px 28px 7px rgba(0,0,0,0.67);
+    -moz-box-shadow: -2px 29px 28px 7px rgba(0,0,0,0.67);
+    box-shadow: -2px 29px 28px 7px rgba(0,0,0,0.67);
+    transition: 0.8s;
+  }
+
+  .exchange-label-box, .charity-label-box, .converter-label-box {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    align-items: center;
+
+    .exchange-label, .charity-label, .converter-label {
+      border-bottom: 1px dashed #000;
+    }
+  }
+}
+
+.type-label-box {
+  display: flex;
+  justify-content: end;
+  align-content: end;
+
+  #purchase {
+    width: 80px;
+    padding: 3px 0 3px 0;
+  }
+
+  #selling {
+    width: 60px;
+    padding: 3px 0 3px 0;
+  }
+
+  .label {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 30px 0 10px;
+  }
+}
+
+.currency-container {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.8s ease-out;
+
+  &:hover {
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+    transition: 10s;
+  }
+
+  .currency-label {
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .currency-box {
+    display: flex;
+
+    .value-label {
+      padding: 20px 40px 20px 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+.charity-container {
+  width: 600px;
+
+  .charity-label-box {
+    justify-content: center;
+    align-content: center;
+
+    .charity-label {
+      margin: 0;
+    }
+
+    .pop-up {
+
+      .question-img {
+        right: 0%;
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 20px;
+        cursor: pointer;
+      }
+    }
+    .pop-up .information {
+      width: 200px;
+      height: 80px;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 4px;
+      opacity: 0.8;
+      background-color: #fff;
+      display: none;
+      right: -20%;
+      top: -20%;
+      padding: 5px 5px 5px 5px;
+      transition: 0.6s ease-out;
+    }
+
+    .pop-up:hover .information {
+      transition: 2s;
+      display: block;
+    }
+  }
+
+  .charity-box {
+
+    .aggressor-label {
+      text-align: center;
+    }
+
+    .charity-request-box {
+      margin: 20px 20px 20px 20px;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+
+      .labels-box {
+        display: flex;
+        justify-content: space-between;
+
+        .total-label, .email-label {
+          font-size: 20px;
+        }
+      }
+
+      .inputs-box {
+        display: flex;
+        justify-content: space-between;
+
+        .get-data {
+          width: 200px;
+          height: 40px;
+          font-size: 22px;
+          text-align: end;
+          border: 1px solid black;
+          border-radius: 4px;
+          padding: 0 20px 0 20px;
+
+          &:nth-child(1) {
+            text-align: start;
+            margin-right: 10px;
+          }
+
+          &:nth-child(2) {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .donate-box {
+        margin: 40px 10px 30px 10px;
+
+        .get-donate {
+          font-size: 20px;
+          width: 150px;
+          height: 40px; 
+          background-color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+.converter-container {
+
+  .converter-label-box {
+    justify-content: end;
+    align-content: end;
+
+    .converter-label {
+       margin: 0 20px 0 0;
+    }
+  }
+
+  .exchanges-form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .arrow-box {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-self: center;
+
+      .arrow-img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .exchanges-form {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 20px 10px 20px;
+
+      .exchanges-box {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 4px;
+      }
+
+      .get-converted-data {
+        width: 100%;
+        height: 40px;
+        font-size: 24px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .convert-box {
+    margin: 20px 10px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .get-convert {
+      font-size: 20px;
+      width: 150px;
+      height: 40px; 
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.bank-functions-container, .vacancies-container {
+  width: 810px;
+  font-size: 20px;
+
+  .functions-container {
+    width: 100%;
+    height: 100%;
+
+    .functions-label-box {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      
+      .functions-label {
+        border-bottom: 1px dashed black;
+      }
+    }
+
+    .functions-box {
+
+      .function {
+        display: flex;
+        align-self: center;
+        margin: 20px 20px 10px 20px;
+
+        .function-img {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-self: center;
+          margin-right: 10px;
+        }
+
+        .arrow {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-self: center;
+          margin: 0 0 0 10px;       
+        }
+
+        .content {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .bank-vacancies-container {
+
+    .vacancy-label-box {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      .vacancy-label {
+        border-bottom: 1px dashed black;
+      }
+    }
+
+    .vacancies-menu-container {
+      width: 100%;
+      height: 270px;
+      overflow: scroll;
+
+      .vacancies-box {
+
+        .vacancy {
+          margin: 10px 10px 10px 0;
+          padding: 10px 10px 10px 10px;
+          border: 1px solid black;
+
+          .vacancy-position-box {
+            display: flex;
+            
+            .user-img {
+              width: 32px;
+              height: 32px;
+            }
+
+            .position-label {
+              width: 100%;
+              align-self: center;
+              padding: 0 20px 0 20px;
+            }
+          }
+
+          .salary-box {
+            width: 100%;
+
+            .salary-label {
+              display: flex;
+              justify-content: end;
+              align-content: end;
+              margin-right: 30px;
+              color: #1a7810;
+            }
+          }
+
+          .vacancy-content-box {
+            display: flex;
+            justify-content: space-between;
+
+            .learn-more-box {
+              margin: 0 35px 0 50px;
+
+              .learn-more-label {
+                border-bottom: 1px solid #000;
+                font-size: 18px;
+                color: #1530dd;
+              }
+            }
+          }
+        }
+      }      
+    }
+  }
+}

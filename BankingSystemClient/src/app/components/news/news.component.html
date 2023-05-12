@@ -1,0 +1,35 @@
+<div class="content-box">
+    <div class="news-label-box">
+        <p>News</p>
+    </div>
+    <div class="count-news-container">
+        <div class="count-news-box">
+            <p>Count news</p>
+            <p> {{ count }} </p>
+        </div>
+    </div>
+    <div class="news-container">
+        <div *ngFor="let item of news" class="news-box">
+            <div class="news-block">
+                <div class="news-content">
+                    <img src="{{ item.imageUrl }}" alt="img">
+                    <div class="content-box">
+                        <div class="title-label-box">
+                            <h2 class="title"> {{ item.title }} </h2>
+                        </div>
+                        <div class="content-block">
+                            <div class="content">
+                                <p> {{ item.content }} </p>
+                            </div>
+                        </div>
+                        <div class="date-publication-box">
+                            <div class="date-publication-block">
+                                <h5> {{ item.date }} </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

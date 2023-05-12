@@ -1,0 +1,46 @@
+div, p, input, button, form, span, a, ul, li {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+
+    a {
+        padding: 0 3px 0 3px; 
+    }
+
+    img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.footer-container {
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #000;
+    background-color: white;
+
+    .footer-block {
+        display: flex;
+    }
+}
+
+.numbers-container {
+    position: absolute;
+    left: 0%;
+}
+
+.networks-images-container{
+    position: absolute; 
+    right: 0px;
+    margin-right: 200px;
+}
+
+.license-container {
+    position: absolute; 
+    right: 0px;
+}

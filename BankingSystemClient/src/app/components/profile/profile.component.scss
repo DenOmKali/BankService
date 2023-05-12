@@ -1,0 +1,283 @@
+.content-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 0;
+
+    .profile-container {
+        width: 1200px;
+        height: auto;
+        margin: 0 50px;
+
+        .profile-data {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #000;
+
+            .image-box {
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .information-box {
+                width: 80%;
+                height: 300px;
+                position: relative;
+
+                .profile-label-box {
+                    font-size: 30px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+
+                    p {
+                        text-align: center;
+                        width: 90px;
+                        color: #fff;
+                        background-color: black;
+                    }
+                }
+
+                .profile-information-box {
+                    width: 100%;
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+
+                    h2 {
+                        font-size: 30px;
+                        color: #5f5f5f;
+                        padding: 10px 10px;
+                        transition: 0.8s ease-out;
+
+                        &:hover {
+                            color: #000;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+
+                .information-data-box {
+                    width: 100%;
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: space-around;
+                    align-content: center;
+
+                    .information-data {
+                        padding: 20px 0 10px 0;
+
+                        :nth-child(1) {
+                            color: #5f5f5f;
+                            text-align: center;
+                        }
+
+                        :nth-child(2) {
+                            font-size: 26px;
+                        }
+                    }
+                }
+
+                .author-box {
+                    width: 100%;
+                    height: auto;
+                    text-align: end;
+                    position: absolute;
+                    bottom: 0%;
+
+                    :nth-child(1) {
+                        font-size: 12px;
+                        color: #828282;
+                        padding-right: 5px;
+                    }
+                }
+
+            }
+        }
+
+        // CARDS DATA
+        .cards-data {
+            height: auto;
+            margin-top: 100px;
+
+            .cards-label-box {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin: 20px 20px;
+
+                :nth-child(1) {
+                  color: #fff;
+                  background-color: #000;
+                  font-size: 27px;
+                }
+            }
+
+
+            .cards-container {
+                height: auto;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 50px 10px;
+
+                #credit-card {
+                  background-color: rgba(255, 215, 0, 0.65);
+                }
+
+                #junior-card {
+                  background-color: rgba(39, 213, 200, 0.6);
+                }
+
+                .card {
+                  display: flex;
+                  height: 230px;
+                  width: 390px;
+                  border-radius: 10px;
+                  box-shadow: -1rem 0 3rem #000;
+                  background-color: #ffffff;
+                  transition: 0.4s ease-out;
+                  position: relative;
+                  left: 0px;
+                  padding: 10px;
+                  margin-bottom: 10px;
+                  margin-right: 10px;
+                  color: #000000;
+
+                  &:not(:first-child) {
+                    margin-left: -50px;
+                  }
+
+                  &:hover {
+                    transform: translate(-40px, -40px);
+                    transition: 0.4s ease-out;
+                    background-color: #000000e0;
+                    border: 1px solid white;
+                    color: #ffffff;
+                  }
+
+                  &:hover .card-data .logo-balance-box .balance-label {
+                    color: rgb(0, 175, 0);
+                  }
+
+                  &:hover .card-data .logo-balance-box .logo-label {
+                    color: white;
+                  }
+
+                  &:hover ~ .card {
+                    transition: 0.4s ease-out;
+                  }
+
+                  .card-data {
+                    width: 100%;
+                    display: grid;
+
+                    .logo-balance-box {
+                      display: flex;
+                      justify-content: space-between;
+
+                      :nth-child(1) {
+                        font-size: 20px;
+                      }
+
+                      :nth-child(2) {
+                        color: #fff;
+                        font-size: 20px;
+
+                        span {
+                          color: #fff;
+                        }
+                      }
+
+                    }
+
+                    .card-number-box {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      text-align: center;
+
+                      .card-number {
+
+                        :nth-child(2) {
+                          font-size: 28px;
+                          padding-bottom: 10px;
+                        }
+                      }
+                    }
+
+                    .cv-date-box {
+                      display: flex;
+                      justify-content: space-around;
+                      align-content: center;
+                      align-items: center;
+                      text-align: center;
+
+                      .date-box {
+
+                        :nth-child(2) {
+                          font-size: 22px;
+                        }
+                      }
+
+                      .cv-box {
+                        :nth-child(2) {
+                          font-size: 22px;
+                        }
+                      }
+                    }
+                  }
+                }
+            }
+        }
+
+      .transactions-container {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+
+        .my-transactions-box {
+          width: 800px;
+          border: 1px solid black;
+
+          .transaction-label-box {
+            text-align: center;
+          }
+
+          .transactions-data-box {
+            margin: 30px;
+
+            .transaction-data {
+              display: flex;
+              justify-content: space-around;
+              -webkit-box-shadow: 0px 0px 31px -2px rgba(0,0,0,0.67);
+              -moz-box-shadow: 0px 0px 31px -2px rgba(0,0,0,0.67);
+              box-shadow: 0px 0px 31px -2px rgba(0,0,0,0.67);
+              padding: 20px;
+
+              p {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,198 @@
+<div class="content-box">
+  <div class="slider-wrapper">
+    <div class="slider-container">
+      <div class="slider-box">
+        <img src="/assets/slider_img/first.jpg">
+        <img src="/assets/slider_img/second.jpg">
+        <img src="/assets/slider_img/third.jpg">
+        <img src="/assets/slider_img/fourth.png">
+      </div>
+    </div>
+  </div>
+  <div class="functional-wrapper">
+    <div class="functional-container">
+      <div class="exchange-container">
+        <div class="exchange-label-box">
+          <p class="exchange-label">Exchange rates</p>
+        </div>
+        <div class="type-label-box">
+          <p id="purchase" class="label">purchase</p>
+          <p id="selling" class="label">selling</p>
+        </div>
+        <div class="currency-container">
+          <p class="currency-label">EUR</p>
+          <ul class="currency-box">
+            <li *ngFor="let currency of exchangeRateEUR" class="value-label"> {{ currency }} </li>
+          </ul>
+        </div>
+        <div class="currency-container">
+          <p class="currency-label">USD</p>
+          <ul class="currency-box">
+            <li *ngFor="let currency of exchangeRateUSD" class="value-label"> {{ currency }} </li>
+          </ul>
+        </div>
+        <div class="currency-container">
+          <p class="currency-label">PLN</p>
+          <ul class="currency-box">
+            <li *ngFor="let currency of exchangeRatePLN" class="value-label"> {{ currency }} </li>
+          </ul>
+        </div>
+      </div>
+      <div class="charity-container">
+        <div class="charity-label-box">
+          <p class="charity-label">to help Ukraine</p>
+          <div class="pop-up">
+            <img class="question-img" src="/assets/few_img/question.png" alt="Question">
+            <p class="information">help Ukraine, enter the donation amount and email to receive a newsletter about new fees.</p>
+          </div>
+        </div>
+        <div class="charity-box">
+          <p class="aggressor-label">help against the Russian aggressor</p>
+          <form action="#" class="charity-request-box">
+            <div class="labels-box">
+              <p class="total-label">Total</p>
+              <p class="email-label">Email</p>
+            </div>
+            <div class="inputs-box">
+              <input id="total" class="get-data" type="text">
+              <input id="email" class="get-data" type="text">
+            </div>
+            <div class="donate-box">
+              <button class="get-donate" type="submit">Donate</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="converter-container">
+        <div class="converter-label-box">
+          <p class="converter-label">Converter</p>
+        </div>
+        <div class="exchanges-form-container">
+          <form action="#" class="exchanges-form">
+            <select name="exchanges" class="exchanges-box" id="converting-data">
+              <option value="uah">UAH</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="pln">PLN</option>
+            </select>
+            <input id="value1" class="get-converted-data" type="text">
+          </form>
+          <div class="arrow-box">
+            <img class="arrow-img" src="/assets/few_img/arrow.png" alt="arrow">
+          </div>
+          <form action="#" class="exchanges-form">
+            <select name="exchanges" class="exchanges-box" id="converted-data">
+              <option value="uah">UAH</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="pln">PLN</option>
+            </select>
+            <input id="value2" class="get-converted-data" type="text">
+          </form>
+        </div>
+        <div class="convert-box">
+          <button class="get-convert">Convert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="information-container">
+    <div class="bank-functions-container">
+      <div class="functions-container">
+        <div class="functions-label-box">
+          <p class="functions-label">Functions of the bank</p>
+        </div>
+        <div class="functions-box">
+          <ul>
+            <li class="function">
+              <img class="function-img" src="/assets/functions_img/news.png" alt="arrow">
+              News<img class="arrow" src="/assets/few_img/arrow.ver2.png" alt="arrow">
+              <p class="content">Here you can view newsEntity from around the world.</p>
+            </li>
+            <li class="function">
+              <img class="function-img" src="/assets/functions_img/credits.png" alt="arrow">
+              Credits<img class="arrow" src="/assets/few_img/arrow.ver2.png" alt="arrow">
+              <p class="content">You can take a loan at <b>1.5%</b> per annum for any term.</p>
+            </li>
+            <li class="function">
+              <img class="function-img" src="/assets/functions_img/cards.png" alt="arrow">
+              Cards<img class="arrow" src="/assets/few_img/arrow.ver2.png" alt="arrow">
+              <p class="content">You can create as many cards as you like.</p>
+            </li>
+            <li class="function">
+              <img class="function-img" src="/assets/functions_img/transfers.png" alt="arrow">
+              Transfers<img class="arrow" src="/assets/few_img/arrow.ver2.png" alt="arrow">
+              <p class="content">You can transfer funds from one card to another.</p>
+            </li>
+            <li class="function">
+              <img class="function-img" src="/assets/functions_img/payments.png" alt="arrow">
+              Payments<img class="arrow" src="/assets/few_img/arrow.ver2.png" alt="arrow">
+              <p class="content">Pay for the Internet, education or something else.</p>
+            </li>
+            <li class="function">
+              <img class="function-img" src="/assets/user_img/user.png" alt="arrow">
+              Vacancies<img class="arrow" src="/assets/few_img/arrow.ver2.png" alt="arrow">
+              <p class="content">Search job special for you.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="vacancies-container">
+      <div class="bank-vacancies-container">
+        <div class="vacancy-label-box">
+          <p class="vacancy-label">Vacancies</p>
+        </div>
+        <div class="vacancies-menu-container">
+          <ul class="vacancies-box">
+            <li class="vacancy">
+              <div class="vacancy-position-box">
+                <img class="user-img" src="/assets/user_img/user.png" alt="user">
+                <p class="position-label">Manager</p>
+                <div class="salary-box">
+                  <h3 class="salary-label">600$</h3>
+                </div>
+              </div>
+              <div class="vacancy-content-box">
+                <p>We need a hard-working manager with a good sense of humor.e need a hard-working manager with a good sense of humor.</p>
+                <div class="learn-more-box">
+                  <a class="learn-more-label" href="#">review</a>
+                </div>
+              </div>
+            </li>
+            <li class="vacancy">
+              <div class="vacancy-position-box">
+                <img class="user-img" src="/assets/user_img/user.png" alt="user">
+                <p class="position-label">Junior Java Developer</p>
+                <div class="salary-box">
+                  <h3 class="salary-label">750$</h3>
+                </div>
+              </div>
+              <div class="vacancy-content-box">
+                <p>Java developer, who know Spring Web and Hibernate technologies.</p>
+                <div class="learn-more-box">
+                  <a class="learn-more-label" href="#">review</a>
+                </div>
+              </div>
+            </li>
+            <li class="vacancy">
+              <div class="vacancy-position-box">
+                <img class="user-img" src="/assets/user_img/user.png" alt="user">
+                <p class="position-label">Midle Full-stack Developer</p>
+                <div class="salary-box">
+                  <h3 class="salary-label">1900$</h3>
+                </div>
+              </div>
+              <div class="vacancy-content-box">
+                <p>Full-stack developer who know Java Spring and Angular.</p>
+                <div class="learn-more-box">
+                  <a class="learn-more-label" href="#">review</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

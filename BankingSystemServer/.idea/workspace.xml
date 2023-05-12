@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4c3629d9-6c4e-4802-b0a1-3b4bf9caac30" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BankingSystemClient/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingSystemClient/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingSystemClient/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingSystemClient/src/app/components/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingSystemClient/src/app/services/exchange.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingSystemClient/src/app/services/exchange.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingSystemClient/src/app/services/news.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingSystemClient/src/app/services/news.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingSystemClient/src/app/services/profile.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingSystemClient/src/app/services/profile.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geekhub/denis/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geekhub/denis/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2PE4I5WYSiQkVBvpHFz5Gh0K228" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/wottt/Desktop/Geekhub/gh-s12-hw-denis-apilat",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c3629d9-6c4e-4802-b0a1-3b4bf9caac30" name="Changes" comment="" />
+      <created>1683008824310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683008824310</updated>
+      <workItem from="1683008825265" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

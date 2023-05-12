@@ -1,0 +1,43 @@
+<div class="content-box">
+  <div class="send-money-box">
+    <div class="transfers-container">
+      <h3>Transfer</h3>
+    </div>
+    <div class="request-data-container">
+      <div class="my-container">
+        <div class="card-number-container">
+          <p>My card number</p>
+          <select [(ngModel)]="requestModel.sendCardNumber">
+            <option *ngFor="let item of cards" [value]="item.cardNumber"> {{ item.cardNumber }} - {{ item.cardType }} - {{ item.balance }} </option>
+          </select>
+        </div>
+        <div class="pin-code-container">
+          <div>
+            <p>Message</p>
+          </div>
+          <input type="text" [(ngModel)]="requestModel.message">
+        </div>
+        <div class="amount-container">
+          <div>
+            <p>Amount</p>
+          </div>
+          <div class="input-box">
+            <input type="text" [(ngModel)]="requestModel.amount">
+            <h1>$</h1>
+          </div>
+        </div>
+      </div>
+      <div class="send-container">
+        <div class="btn-container">
+          <button (click)="sendMoney()">Send Money</button>
+        </div>
+      </div>
+      <div class="recipient-container">
+        <div class="recipient-box">
+          <p>Recipient card number</p>
+          <input [(ngModel)]="requestModel.receivedCardNumber">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,139 @@
+<div class="content-box">
+    <div class="profile-container">
+        <div class="profile-data">
+            <div class="image-box">
+                <img src="/assets/user_img/user.png" alt="">
+            </div>
+            <div class="information-box">
+                <div class="profile-label-box">
+                    <p>Profile</p>
+                </div>
+                <div *ngIf="profile.role === 'ADMIN'">
+                  <a routerLink="/admin"><h3>Admin Panel</h3></a>
+                </div>
+                <div class="profile-information-box">
+                    <h2> {{ profile.name }} </h2>
+                    <h2> {{ profile.surname }} </h2>
+                </div>
+                <div class="information-data-box">
+                    <div class="information-data">
+                        <h5>Country</h5>
+                        <p>Ukraine</p>
+                    </div>
+                    <div class="information-data">
+                        <h5>Phone Number</h5>
+                        <p> {{ profile.phoneNumber }} </p>
+                    </div>
+                    <div class="information-data">
+                        <h5>Email</h5>
+                        <p> {{ profile.email }} </p>
+                    </div>
+                </div>
+                <div class="author-box">
+                    <p>Powered by: Apilat Denis</p>
+                </div>
+            </div>
+        </div>
+        <div class="cards-data">
+            <div class="cards-label-box">
+                <p>My Cards</p>
+            </div>
+            <div class="cards-container" >
+              <ng-container *ngFor="let item of cards">
+                <div id="credit-card" class="card" *ngIf="item.cardType == 'CREDIT'">
+                  <div class="card-data">
+                    <div class="logo-balance-box">
+                      <h4 class="logo-label">Optimus Bank</h4>
+                      <h4 class="balance-label"><span>Balance:</span> {{ item.balance }}$</h4>
+                    </div>
+                    <div class="card-number-box">
+                      <div class="card-number">
+                        <p>Card-number</p>
+                        <p> {{ item.cardNumber }} </p>
+                      </div>
+                    </div>
+                    <div class="cv-date-box">
+                      <div class="date-box">
+                        <p>Date end</p>
+                        <p> {{ item.dateExpiration }} </p>
+                      </div>
+                      <div class="cv-box">
+                        <p> {{ item.cardType }} </p>
+                        <p> {{ item.cvv2 }} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+              <ng-container *ngFor="let item of cards">
+                <div id="debit-card" class="card" *ngIf="item.cardType == 'DEBIT'">
+                  <div class="card-data">
+                    <div class="logo-balance-box">
+                      <h4 class="logo-label">Optimus Bank</h4>
+                      <h4 class="balance-label"><span>Balance:</span> {{ item.balance }}$</h4>
+                    </div>
+                    <div class="card-number-box">
+                      <div class="card-number">
+                        <p>Card-number</p>
+                        <p> {{ item.cardNumber }} </p>
+                      </div>
+                    </div>
+                    <div class="cv-date-box">
+                      <div class="date-box">
+                        <p>Date end</p>
+                        <p> {{ item.dateExpiration }} </p>
+                      </div>
+                      <div class="cv-box">
+                        <p> {{ item.cardType }} </p>
+                        <p> {{ item.cvv2 }} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+              <ng-container *ngFor="let item of cards">
+                <div id="junior-card" class="card" *ngIf="item.cardType == 'JUNIOR'">
+                  <div class="card-data">
+                    <div class="logo-balance-box">
+                      <h4 class="logo-label">Optimus Bank</h4>
+                      <h4 class="balance-label"><span>Balance:</span> {{ item.balance }}$</h4>
+                    </div>
+                    <div class="card-number-box">
+                      <div class="card-number">
+                        <p>Card-number</p>
+                        <p> {{ item.cardNumber }} </p>
+                      </div>
+                    </div>
+                    <div class="cv-date-box">
+                      <div class="date-box">
+                        <p>Date end</p>
+                        <p> {{ item.dateExpiration }} </p>
+                      </div>
+                      <div class="cv-box">
+                        <p> {{ item.cardType }} </p>
+                        <p> {{ item.cvv2 }} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+        </div>
+      <div class="transactions-container">
+        <div class="my-transactions-box">
+          <div class="transaction-label-box">
+            <h4>My sending transactions</h4>
+          </div>
+          <ng-container *ngFor="let item of allMyTransaction">
+            <div class="transactions-data-box">
+              <div class="transaction-data">
+                <p>Amount: {{ item.amount }} </p>
+                <p>Message: {{ item.message }} </p>
+              </div>
+            </div>
+          </ng-container>
+
+        </div>
+      </div>
+    </div>
+</div>

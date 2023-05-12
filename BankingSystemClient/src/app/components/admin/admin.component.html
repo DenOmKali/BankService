@@ -1,0 +1,61 @@
+<div class="content-box">
+  <div class="add-news-container">
+    <div class="news-label-box">
+      <h3>Add news</h3>
+    </div>
+    <div class="data-box">
+      <form action="">
+        <div>
+          Title
+          <input type="text">
+        </div>
+        <div class="area-box">
+          Content
+          <textarea></textarea>
+        </div>
+        <div>
+          Image url
+          <input type="text">
+        </div>
+        <div class="button-box">
+          <button>Create news</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="add-vacancies-container">
+    <div class="vacancies-label-box">
+      <h3>Add vacancy</h3>
+    </div>
+    <div class="data-box">
+      <form (ngSubmit)="addNews()" action="">
+        <div>
+          Title
+          <input type="text" name="title" [(ngModel)]="newsModel.title">
+        </div>
+        <div class="area-box">
+          Content
+          <textarea name="content" [(ngModel)]="newsModel.content"></textarea>
+        </div>
+        <div>
+          Image url
+          <input type="text" name="imageUrl" [(ngModel)]="newsModel.imageUrl">
+        </div>
+        <div class="button-box">
+          <button type="submit">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="download-files-container">
+    <div class="download-label-box">
+      <h3>Download Reports</h3>
+    </div>
+    <div class="download-box">
+      <a routerLink="/admin">Report1</a>
+      <a routerLink="/admin">Report2</a>
+      <a routerLink="/admin">Report3</a>
+      <a routerLink="/admin">Report4</a>
+    </div>
+  </div>
+</div>
